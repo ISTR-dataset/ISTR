@@ -111,4 +111,3 @@ dependencies:
     - wrapt==1.16.0
     - xformers==0.0.16
     - zipp==3.20.2
-prefix: /root/miniconda3/envs/sd-train
