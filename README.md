@@ -36,7 +36,7 @@ pip install -e .
 sh SD_finetune.sh
 ```
 
-## 鸣谢
+## 🌟 Acknowledgments
 This project was built upon the work of Linaqruf, whose [kohya-trainer](https://github.com/Linaqruf/kohya-trainer) served as a valuable resource for the development of our methods. We sincerely appreciate their contribution to the community.
 
 ## 💡 Disclaimer
