@@ -22,7 +22,7 @@ ISTR (Industrial Survey Table Recognition) is the first dataset focused on curve
 **（2）Image-to-Image Translation**: Research on transforming noisy inputs into clean outputs.  
 **（3）Expanding Table Recognition**: Extending table recognition to non-text, structured data.  
 
-##  Setup
+## 🔧 Setup
 ```
 conda create -n ISTR python=3.9.2
 conda activate ISTR
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-## Train
+## 💫 Train
 ```
 sh SD_finetune.sh
 ```
@@ -61,7 +61,7 @@ sh SD_finetune.sh
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/shaojintian
 
-## Disclaimer
+## 💡 Disclaimer
 We developed this repository for **research purposes only**, and it is strictly limited to personal, academic, or non-commercial use.
 
 
