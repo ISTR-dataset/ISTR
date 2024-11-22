@@ -29,11 +29,7 @@ ISTR (Industrial Survey Table Recognition) is the first dataset focused on curve
 
 ## 🔧 Setup
 ```
-conda create -n ISTR python=3.9.2
-conda activate ISTR
-conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
-pip install -r requirements.txt
-pip install -e .
+conda env create -f requirements.yml
 ```
 
 ## 💫 Train
