@@ -2,10 +2,15 @@
 
 # ISTR: A Curve-Centric Dataset for Industrial Survey Table Recognition
 
-
-<p align="center">
-  <h3 align="center">"The ISTR dataset is available for download at the following [Quark](link:https://pan.quark.cn/s/cc8be9495958)"</h3>
-</p>
+  <h3 align="center">"The ISTR dataset is available for download at the following"</h3>
+  <p align="center">
+    A comprehensive dataset for industrial survey table recognition, featuring curve-based table images.  
+    <br />
+    <a href="https://pan.quark.cn/s/cc8be9495958"><strong>Quark Cloud »</strong></a>
+    ·
+    <a href="https://drive.google.com/file/d/1wALMc-1S52mywvH_MHffubqXj5qqGE3L/view?usp=drive_link"><strong> Google Drive »</strong></a>
+    <br />
+  </p>
 
 ## 📖 Introduction
 ISTR (Industrial Survey Table Recognition) is the first dataset focused on curve elements in industrial survey tables, aiming to advance research on automatic interpretation in the industrial mapping field. The dataset is derived from 107 well log charts, spanning multiple regions and depths, and includes 10,453 high-quality annotated images. ISTR supports image-to-image translation tasks, particularly for transforming noisy images into clean, structured table-like outputs.
