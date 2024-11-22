@@ -1,0 +1,55 @@
+[model_arguments]
+# When both are set to true, training of Stable Diffusion V2 version is enabled.
+v2 = true
+v_parameterization = true
+pretrained_model_name_or_path = ""   # SD model path
+
+[optimizer_arguments]
+optimizer_type = "AdamW"  # There are seven optimizers available: ["AdamW" (default), "AdamW8bit", "Lion", "SGDNesterov", "SGDNesterov8bit", "DAdaptation", "AdaFactor"].
+learning_rate = 1e-7    # Training learning rate, recommended 2e-6 for single GPU and 1e-7 for multi-GPU. If the learning rate is too high, the SD model may diverge and generate very poor images during inference; if it's too low, the model may get stuck in a local minimum.
+max_grad_norm = 1.0    # Maximum gradient norm, 0 means no clipping, 1 means clipping gradients to 1.
+train_text_encoder = false   # Whether to fine-tune the Text Encoder during SD model training. If set to true, the Text Encoder will be fine-tuned.
+lr_scheduler = "constant"   # Learning rate scheduling strategy, can be set to linear, cosine, cosine_with_restarts, polynomial, constant (default), constant_with_warmup, adafactor.
+lr_warmup_steps = 0    # Number of steps to train with a fixed learning rate before applying learning rate scheduling.
+
+[dataset_arguments]
+debug_dataset = false   # Debug the data during training to prevent corrupted data from interrupting the training process.
+in_json = ""    # Path to the dataset JSON file, which includes dataset name, labels, bucketing information, etc.
+train_data_dir = ""   # Domain A.
+dataset_repeats = 2   # Number of times the entire dataset is repeated during training, or the number of times each epoch's data is iterated. (Tip: If the dataset is less than 1000, set it to 10; for 1000 to 10000, set it to 5; for more than 10000, set it to 2)
+shuffle_caption = true   # Shuffle the training labels to improve model generalization when set to true.
+keep_tokens = 0   # During training, the order of tokens in the text may be shuffled. If keep_tokens is set to n, the first n tokens will not be shuffled during training.
+resolution = "256,256"   # Set the input resolution for training, width and height. Resolution should be a multiple of 32, like 512, 768, 1024, or larger. A higher resolution allows the SD model to learn more information from the data, improving output during inference.
+caption_dropout_rate = 0   # Probability of dropping all labels for a data entry, default is 0.
+caption_tag_dropout_rate = 0   # Probability of dropping part of the labels for a data entry, default is 0. (Similar to traditional deep learning Dropout logic)
+caption_dropout_every_n_epochs = 0   # Drop all labels for the data every n epochs during training.
+color_aug = false   # Data color augmentation, not recommended to enable, as it is incompatible with caching latents, and will significantly increase training time (since the input data changes during each iteration, preventing pre-caching of latents).
+token_warmup_min = 2   # Learn the first n tags (comma-separated tags like girl, boy, good) of each data entry at the start of training.
+token_warmup_step = 0   # The number of steps required to reach the maximum number of tags learned during training, default is 0, meaning all tags are learned from the start.
+
+[training_arguments]
+output_dir = ""   # Path to save the trained model.
+output_name = ""   # Model name.
+save_precision = "fp16"   # Precision to save the model, options are ["None", "float", "fp16", "bf16"], default is "None" (FP32 precision).
+save_n_epoch_ratio = 2000  # Save model weights every n steps.
+save_state = true   # If set to true, save the training state (including optimizer state) along with the model weights.
+train_batch_size = 4  # Training batch size, as with traditional deep learning.
+max_token_length = 225   # Maximum token length for the Text Encoder, options are [None, 150, 225], default is "None" (75 tokens).
+mem_eff_attn = false   # Lightweight cross-attention.
+xformers = true   # Plugin to reduce memory usage by about half during SDXL model training.
+max_train_steps = 5000  # Total number of training steps for the SD model.
+max_data_loader_n_workers = 8   # Number of workers for the DataLoader, default is 8.
+persistent_data_loader_workers = true   # Allows DataLoader workers to stay active between epochs to reduce data loading time, but increases memory usage.
+gradient_checkpointing = false   # If set to true, enable gradient checkpointing, which trades computation time for reduced memory usage by recomputing intermediate variables during backpropagation.
+gradient_accumulation_steps = 1   # If memory is insufficient, use gradient accumulation steps, default is 1.
+mixed_precision = "fp16"   # Whether to use mixed precision training, options are ["no", "fp16", "bf16"], default is "no".
+clip_skip = 1   # Set clip_skip to 2 to extract the second-to-last layer of the CLIP Text Encoder output; set it to 1 to extract the last layer output. CLIP Text Encoder has 12 layers, and skipping too abstract information can prevent overfitting. Recommended: clip_skip = 2 for 2D models, clip_skip = 1 for 3D models.
+logging_dir = ""   # Path to save training logs.
+log_prefix = ""   # Prefix for log file names, e.g., sd_finetune_WeThinkIn1234567890.
+
+[sample_prompt_arguments]
+sample_every_n_steps = 200  # Test the model every n steps during training.
+sample_sampler = "ddim"   # Set the sampler used for testing the model during training. Options are ["ddim", "pndm", "lms", "euler", "euler_a", "heun", "dpm_2", "dpm_2_a", "dpmsolver", "dpmsolver++", "dpmsingle", "k_lms", "k_euler", "k_euler_a", "k_dpm_2", "k_dpm_2_a"], default is "ddim".
+
+[saving_arguments]
+save_model_as = "safetensors"  # Format to save model weights, options are ["ckpt", "safetensors", "diffusers", "diffusers_safetensors"]. Currently, SD WebUI supports "ckpt" and "safetensors" model formats.
