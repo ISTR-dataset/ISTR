@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b44651e-2636-4cf6-a63c-e906cb4f87be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SD_finetune.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/blip/blip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/blip/med.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/blip/med_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/blip/vit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/clean_captions_and_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/hypernetwork_nai.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/config_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/custom_train_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/huggingface_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/lpw_stable_diffusion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/model_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/train_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/library/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/make_captions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/make_captions_by_git.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/merge_all_to_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/merge_captions_to_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/merge_dd_tags_to_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/prepare_buckets_latents.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune/tag_images_by_wd14_tagger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/compare_txt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/config_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/custom_train_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/huggingface_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/lpw_stable_diffusion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/model_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/train_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_config/config/.ipynb_checkpoints/config_file-checkpoint.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_config/config/.ipynb_checkpoints/sample_prompt-512-checkpoint.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_config/config/.ipynb_checkpoints/sample_prompt-checkpoint.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_config/config/config_file.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_config/config/sample_prompt-256.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2pC9VFR7ej1tAjWrNdVsH2bWAU0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/sunhao/my/github_project/ISTR",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b44651e-2636-4cf6-a63c-e906cb4f87be" name="Changes" comment="" />
+      <created>1732259212320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732259212320</updated>
+      <workItem from="1732259213470" duration="7598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
