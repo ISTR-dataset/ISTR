@@ -1,1 +1,0 @@
-masterpiece, best quality,multiple curves, curved, continuous, smooth, different colors, white background   --n lowres, text, error, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry   --w 512   --h 512   --l 7   --s 28    
