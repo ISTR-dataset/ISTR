@@ -6,7 +6,7 @@
   <p align="center">
     A comprehensive dataset for industrial survey table recognition, featuring curve-based table images.  
     <br />
-    <a href=""><strong> Google Drive »</strong></a>
+    <a href="https://drive.google.com/file/d/1bNlVWC4eNKKJgBJkVNXVbKiNqMxwkNlc/view?usp=drive_link"><strong> Google Drive »</strong></a>
     ·
     <a href="https://pan.quark.cn/s/e42f4cb0eaf5"><strong>Quark Cloud »</strong></a>
     <br />
