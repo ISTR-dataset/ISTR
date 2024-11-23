@@ -2,9 +2,9 @@
 
 # ISTR: A Curve-Centric Dataset for Industrial Survey Table Recognition
 
-  <h3 align="center">"The ISTR dataset is available for download at the following"</h3>
+  <h3 align="center">"We have released 100 sample images from the ISTR dataset. The full dataset will be made available after the associated paper is accepted for publication."</h3>
   <p align="center">
-    A comprehensive dataset for industrial survey table recognition, featuring curve-based table images.  
+    You can download the 100 sample images via the following link: 
     <br />
     <a href="https://drive.google.com/file/d/1bNlVWC4eNKKJgBJkVNXVbKiNqMxwkNlc/view?usp=drive_link"><strong> Google Drive »</strong></a>
     ·
