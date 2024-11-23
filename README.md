@@ -8,7 +8,7 @@
     <br />
     <a href=""><strong> Google Drive »</strong></a>
     ·
-    <a href=""><strong>Quark Cloud »</strong></a>
+    <a href="https://pan.quark.cn/s/e42f4cb0eaf5"><strong>Quark Cloud »</strong></a>
     <br />
   </p>
 
